@@ -76,7 +76,7 @@ class Saved extends Component {
         fileName: useImg,
         item: myProduct.pillow,
         itemType: "pillow-product"
-    }).then(() => { window.location.reload() })
+    })
         // .then(res => this.loadBooks())
         .catch(err => console.log(err));
    
