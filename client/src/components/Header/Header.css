@@ -1,0 +1,28 @@
+#pg-header {
+    margin-top: -28px;
+    height: 530px;
+    background-image: url('../../images/templates/products/bkpic.png');
+    background-size: cover;
+}
+
+#createBtn {
+    margin-top: 5px;
+}
+
+#hm-bar {
+    margin-top: -26px;
+    max-height: 70px;
+}
+
+.slide-info {
+    padding-top: 350px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 3em;
+    color: rgb(16, 84, 174);
+}
+
+.title-txt {
+    font-family: 'Black Han Sans', sans-serif;
+    padding: 10px 0px 10px 0px;
+    color: white;
+}

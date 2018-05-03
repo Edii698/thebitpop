@@ -1,0 +1,33 @@
+{
+  "name": "nyt-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "aframe": "^0.8.2",
+    "aframe-react": "^4.4.0",
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.2.1",
+    "jwt-decode": "^2.2.0",
+    "mongoose": "^4.13.3",
+    "mongoose-unique-validator": "^2.0.0",
+    "morgan": "^1.9.0",
+    "react-dom": "^16.3.2"
+  }
+}

@@ -1,0 +1,182 @@
+#view-btn {
+    margin-top: 5%;
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+#orders-btn {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.option-btn {
+    width: 100%;
+    height: 100px;
+    margin-right: 5px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2em;
+}
+
+.option-btn-big {
+    width: 100%;
+    height: 65px;
+    margin-right: 5px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.75em;
+}
+
+#toCreate {
+    padding-top: 2px;
+}
+
+.right-btn {
+    margin-left: 5px;
+}
+
+.myArt {
+    height: 100px;
+}
+
+.productThumb {
+    position: relative;
+    display: inline;
+    margin-right: 15px;
+}
+
+.mug-product {
+    position: absolute;
+    height: 65px;
+    margin: 24px 0px 0px 7px;
+    z-index: 2;
+}
+
+.shirt-product {
+    position: absolute;
+    height: 37px;
+    margin: 26px 0px 0px 37px;
+    z-index: 2;
+}
+
+.pillow-product {
+    position: absolute;
+    height: 73px;
+    margin: 20px 0px 0px 14px;
+    z-index: 2;
+}
+
+#create-title {
+    color: rgb(0, 38, 94);
+}
+
+.productBk {
+    position: relative;
+    height: 120px;
+}
+
+#pillow {
+    background-image: url("../../images/templates/products/pillow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 330px;
+    margin-top: 15px;
+}
+
+#pillow-big {
+    background-image: url("../../images/templates/products/pillow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+}
+
+.previewImg-pillow {
+    width: 240px;
+    height: auto;
+    margin: 55px 0px 0px 40px;
+}
+
+.previewImg-pillow-big {
+    width: 350px;
+    height: auto;
+    margin: 80px 0px 0px 70px;
+}
+
+.previewBtn {
+    width: 80%;
+}
+
+.previewBtn-save {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#shirt {
+    background-image: url("../../images/templates/products/shirt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 330px;
+    margin-top: 15px;
+}
+
+#shirt-big {
+    background-image: url("../../images/templates/products/shirt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+}
+
+.previewImg-shirt {
+    width: 110px;
+    height: auto;
+    margin: 80px 0px 0px 110px;
+}
+
+.previewImg-shirt-big {
+    width: 180px;
+    height: auto;
+    margin: 117px 0px 0px 157px;
+}
+
+#mug {
+    background-image: url("../../images/templates/products/mug.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 330px;
+    margin-top: 15px;
+}
+
+#mug-big {
+    background-image: url("../../images/templates/products/mug.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: auto;
+}
+
+.previewImg-mug {
+    width: 171px;
+    height: auto;
+    margin: 80px 0px 0px 30px;
+}
+
+.previewImg-mug-big {
+    width: 245px;
+    height: auto;
+    margin: 117px 0px 0px 45px;
+}
+
+#userName {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+h5 {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.optionFont {
+    font-family: 'Black Han Sans', sans-serif;
+}
