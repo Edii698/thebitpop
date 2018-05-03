@@ -76,10 +76,10 @@ class Saved extends Component {
         fileName: useImg,
         item: myProduct.pillow,
         itemType: "pillow-product"
-      })
+    }).then(() => { window.location.reload() })
         // .then(res => this.loadBooks())
         .catch(err => console.log(err));
-    window.location.reload();
+   
     }
 
   saveShirt = (event) => {
@@ -89,10 +89,10 @@ class Saved extends Component {
       fileName: useImg,
       item: myProduct.shirt,
       itemType: 'shirt-product'
-    })
+    }).then(() => { window.location.reload() })
       // .then(res => this.loadBooks())
       .catch(err => console.log(err));
-    window.location.reload();
+    
   }
   
   saveMug = (event) => {
@@ -102,10 +102,10 @@ class Saved extends Component {
       fileName: useImg,
       item: myProduct.mug,
       itemType: "mug-product"
-    })
+    }).then(() => { window.location.reload() })
       // .then(res => this.loadBooks())
       .catch(err => console.log(err));
-    window.location.reload();
+    
   }
 
 
@@ -146,7 +146,7 @@ class Saved extends Component {
                 <Modal
                   header='Your Saved Products'
                   bottomSheet
-                  trigger={<Button id="view-btn" className="#ff8f00 amber darken-3" waves='light'>View Saved Products<Icon left>view_module</Icon></Button>}>
+                  trigger={<Button id="view-btn" className="#ff8f00 amber darken-3" waves='light'>View Saved Products</Button>}>
                   <div>
                     {this.state.myProducts.map(product => (
                       <div className="productThumb" background={product.item}>
@@ -160,7 +160,7 @@ class Saved extends Component {
                 </div>
               <div className="center-align">
                 <Link to="/preview">
-                <Button id="orders-btn" className="#ff8f00 amber darken-3" waves='light'>Room View<Icon left>insert_emoticon</Icon></Button>
+                <Button id="orders-btn" className="#ff8f00 amber darken-3" waves='light'>Room View</Button>
                 </Link>
               </div> 
               </Col>
