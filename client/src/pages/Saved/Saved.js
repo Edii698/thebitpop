@@ -89,7 +89,7 @@ class Saved extends Component {
       fileName: useImg,
       item: myProduct.shirt,
       itemType: 'shirt-product'
-    }).then(() => { window.location.reload() })
+    })
       // .then(res => this.loadBooks())
       .catch(err => console.log(err));
     
@@ -102,7 +102,7 @@ class Saved extends Component {
       fileName: useImg,
       item: myProduct.mug,
       itemType: "mug-product"
-    }).then(() => { window.location.reload() })
+    })
       // .then(res => this.loadBooks())
       .catch(err => console.log(err));
     
