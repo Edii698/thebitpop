@@ -64,10 +64,10 @@ class FabricCanvas extends React.Component {
             API.saveArt({
                 fileName: link.href,
                 // _UserId: 
-            })
+            }).then(() => {window.location.reload()})
                 // .then(res => this.loadBooks())
                 .catch(err => console.log(err));
-                window.location.reload();
+               
         }
 
     }
