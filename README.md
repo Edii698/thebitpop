@@ -1,42 +1,48 @@
-# Create React Express App
+# BitPop.me!
 
-## About This Boilerplate
+## About the App
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+Bitpop is an avatar creator. It allows a user to create a character and preview their creation on different products that the website offers.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+*This app is still a work in progress. 
 
-## Starting the app locally
 
-Start by installing front and backend dependencies. While in this directory, run the following commands:
+### Technologies Used 
+MERN Stack: React JS, React-Materialize, Node JS, Express JS, Mongo DB, Mongoose, React-Router, Axios, Fabric JS, A frame, HTML Canvas.
 
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
+### Welcome to BitPop.me
 
-After both installations complete, run the following command in your terminal:
+Demo: [View the App](https://stark-meadow-68885.herokuapp.com/)
 
-```
-yarn start
-```
+![home page](readme-img1.png)
 
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+This is the dashboard page [click here](https://stark-meadow-68885.herokuapp.com/saved). You can get there by clicking the "Get Started" link in the nav bar on the home page.
 
-## Deployment (Heroku)
+View Saved Products: Will bring up a modal with images of products the user has saved using the save products button at the bottom of the page.
 
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
+Room View: This will open a new page and turn the users camera on to view there latest avatar in AR using the marker [HERE](https://pbs.twimg.com/media/C8j9bSHXkAUNSoh.jpg).
 
-1. Build the React app for production by running the following command:
+Below "Welcome" you will find all the avatars saved to the users account.
 
-```
-yarn build
-```
+![welcome page](readme-img2.png)
 
-2. Add and commit all changes to git
+This is the Character or Avatar Creator section of the dashboard page.
 
-3. Push to Heroku
+Create a character by clicking on one of the buttons. A modal will appear with options for the corresponding button. The option clicked with then be added to the canvas, and the user will click on the next feature they would like to add.
 
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+When the user is happy with their new character they can save it by clicking the "Save Your Character" button.
+
+It will be added to the characters above the creator section.
+
+![character creator](readme-img3.png)
+
+Clicking on one of the saved characters above the creator section will add it to the product preview section.
+
+Click Preview to view a bigger image of the product with the character on it or click save to save the product to the user account.
+
+![product preview](readme-img4.png)
+
+Below is a look at what the "Room View" AR button will display while holding the [Hiro](https://pbs.twimg.com/media/C8j9bSHXkAUNSoh.jpg) marker up to the camera.
+
+![ar preview](readme-img5.png)
+
