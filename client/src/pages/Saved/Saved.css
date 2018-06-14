@@ -79,7 +79,7 @@
     background-repeat: no-repeat;
     height: 400px;
     width: 330px;
-    margin-top: 15px;
+    margin: 15px 0px 0px 35px;
 }
 
 #pillow-big {
@@ -117,7 +117,7 @@
     background-repeat: no-repeat;
     height: 400px;
     width: 330px;
-    margin-top: 15px;
+    margin: 15px 0px 0px 35px;
 }
 
 #shirt-big {
@@ -146,7 +146,7 @@
     background-repeat: no-repeat;
     height: 400px;
     width: 330px;
-    margin-top: 15px;
+    margin: 15px 0px 0px 35px;
 }
 
 #mug-big {
@@ -180,3 +180,14 @@ h5 {
 .optionFont {
     font-family: 'Black Han Sans', sans-serif;
 }
+
+.productTh-col {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+/* .delete-btn-prod {
+    display: inline;
+} */

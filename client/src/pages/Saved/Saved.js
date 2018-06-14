@@ -108,6 +108,28 @@ class Saved extends Component {
     
   }
 
+  deleteArt = (e, art) => {
+    // event.preventDefault();
+    e.target.value, art
+    console.log(art);
+    console.log(art._id)
+    API.deleteArt(art._id).then(() => { window.location.reload() })
+      // .then(res => this.loadBooks())
+      .catch(err => console.log(err));
+
+  }
+
+  deleteProduct = (e, product) => {
+    // event.preventDefault();
+    e.target.value, product
+    console.log(product);
+    console.log(product._id)
+    API.deleteProduct(product._id).then(() => { window.location.reload() })
+      // .then(res => this.loadBooks())
+      .catch(err => console.log(err));
+
+  }
+
 
 
   getId = (e, art) => {
@@ -149,9 +171,12 @@ class Saved extends Component {
                   trigger={<Button id="view-btn" className="#ff8f00 amber darken-3" waves='light'>View Saved Products</Button>}>
                   <div>
                     {this.state.myProducts.map(product => (
-                      <div className="productThumb" background={product.item}>
-                        <img src={product.fileName} alt="thumbnail preview" className={product.itemType} />
-                        <img src={product.item} alt="thumbnail preview" className="productBk" /> 
+                      <div className="col s2 productTh-col">
+                        <div className="productThumb" background={product.item}>
+                          <img src={product.fileName} alt="thumbnail preview" className={product.itemType} />
+                          <img src={product.item} alt="thumbnail preview" className="productBk" /> 
+                        </div>
+                        <Button id={product.id} value={product.id} className="#ff8f00 amber darken-3 delete-btn-prod" waves='light' onClick={((e) => this.deleteProduct(e, product))}>Delete</Button>
                       </div>
                     ))}
                   </div>
@@ -162,6 +187,8 @@ class Saved extends Component {
                 <Link to="/preview">
                 <Button id="orders-btn" className="#ff8f00 amber darken-3" waves='light'>Room View</Button>
                 </Link>
+                <p>To view your latest character in AR click the "Room View" button.</p>
+                <p>Use <Link to="https://pbs.twimg.com/media/C8j9bSHXkAUNSoh.jpg" target="blank">this</Link> marker to track your character in AR.</p>
               </div> 
               </Col>
             </Row>
@@ -173,7 +200,10 @@ class Saved extends Component {
               {this.state.arts.length ? (
                 <div>
                   {this.state.arts.map(art => (
+                    <div className="col s2">
                     <img src={art.fileName} id={art.id} value={art.id} onClick={((e) => this.getId(e, art))} alt="thumbnail preview" className="myArt" />
+                      <Button id={art.id} value={art.id} className="#ff8f00 amber darken-3 delete-btn" waves='light' onClick={((e) => this.deleteArt(e, art))}>Delete</Button>
+                    </div>
                   ))}
                 </div>
               ) : (

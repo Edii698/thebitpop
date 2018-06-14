@@ -65,7 +65,10 @@ class Nav extends React.Component {
     return (
       <div className="navbar-fixed">
           <Navbar brand='BitPop.me!' className="#03a9f4 light-blue">
-                  <Modal
+          <Link to="/saved">
+          <NavItem className="right">Get Started</NavItem>
+          </Link>
+                  {/* <Modal
                     header='Sign in'
                     fixedFooter
                     trigger={<NavItem className="right" onClick={() => console.log('test click')}>Get Started</NavItem>}>
@@ -85,9 +88,9 @@ class Nav extends React.Component {
                             </Link>
                           </form>  
                       </Row>
-                  </Modal>
+                  </Modal> */}
                 
-                  <Modal
+                  {/* <Modal
                     header='Sign up'
                     fixedFooter
                     trigger={<NavItem className="right" href='components.html'>Sign Up</NavItem>}>
@@ -107,7 +110,7 @@ class Nav extends React.Component {
                         </Button>
                       </form>  
                     </Row>
-                  </Modal>
+                  </Modal> */}
           </Navbar>
       </div>
     );  

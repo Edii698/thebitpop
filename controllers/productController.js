@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the producticleController
+// Defining methods for the productController
 module.exports = {
   findAll: function(req, res) {
     db.Product

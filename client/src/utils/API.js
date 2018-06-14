@@ -28,7 +28,13 @@ export default {
   },
   // Deletes the saved article with the given id
   deleteArt: function(id) {
+    console.log(id);
     return axios.delete("/api/art/" + id);
+  },
+
+  deleteProduct: function (id) {
+    console.log(id);
+    return axios.delete("/api/product/" + id);
   },
   // Saves an article to the database
   saveArt: function(artData) {

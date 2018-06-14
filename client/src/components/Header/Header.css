@@ -1,7 +1,7 @@
 #pg-header {
     margin-top: -28px;
     height: 530px;
-    background-image: url('../../images/templates/products/bkpic.png');
+    background-image: url('../../images/templates/products/newBannerImg.png');
     background-size: cover;
 }
 
@@ -11,18 +11,26 @@
 
 #hm-bar {
     margin-top: -26px;
-    max-height: 70px;
+    height: 285px;
 }
 
 .slide-info {
-    padding-top: 350px;
+    padding-top: 10px;
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 3em;
-    color: rgb(16, 84, 174);
+    font-size: 4em;
+    color: rgb(255, 255, 255);
 }
 
 .title-txt {
+    margin-top: -15px;
     font-family: 'Black Han Sans', sans-serif;
     padding: 10px 0px 10px 0px;
     color: white;
+}
+
+.hm-copy {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
+    margin-top: -10px
 }

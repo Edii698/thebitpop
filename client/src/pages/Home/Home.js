@@ -40,29 +40,28 @@ class Home extends Component {
     return (
       <div>
           <Header />
-          <Container>
-            <Row>
-              <Col s={12} m={4} className='home-info'>
+          
+            <Row className="home-prod-pre">
+              <Col s={12} className='home-info'>
               
-                <img src={require("../../images/templates/products/pillow-home.png")} className="home-img" alt="" />
-              
+                <img src={require("../../images/templates/products/pillow-hm.png")} className="home-img" alt="" />
+            <img src={require("../../images/templates/products/shirt-hm.png")} alt="" className="home-img" />
+            <img src={require("../../images/templates/products/mug-hm.png")} alt="" className="home-img" />
               </Col>
-              <Col s={12} m={4} className='home-info'>
+              {/* <Col s={12} m={4} className='home-info'>
               <div >
-                <img src={require("../../images/templates/products/shirt-home.png")} alt="" className="home-img"/>
+                <img src={require("../../images/templates/products/shirt-hm.png")} alt="" className="home-img"/>
                 </div>
               </Col>
               <Col s={12} m={4} className='home-info'>
               <div >
-                <img src={require("../../images/templates/products/mug-home.png")} alt="" className="home-img"/>
+              <img src={require("../../images/templates/products/shirt-hm.png")} alt="" className="home-img" />
                     </div>
-              </Col>
+              </Col> */}
             </Row>
-            <Row>
-             
-            </Row>
-          </Container>
-        <Footer />
+            
+          
+        <Footer className="hm-footer"/>
       </div>
     );
   }
